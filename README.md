@@ -1,17 +1,18 @@
 # Text Summarization and TTS
-경희대학교 2020학년도 1학기 학부 연구에서 진행한 프로젝트입니다. 네이버 뉴스 링크를 받아와 요약하고, 키워드와 주요 문장을 한국어 음성으로 출력합니다.
+경희대학교 2020학년도 1학기 학부 연구에서 진행한 프로젝트입니다.  
+네이버 뉴스 링크를 받아와 요약하고, 키워드와 주요 문장을 한국어 음성으로 출력합니다.  
 
 
 ## TextRank
-TextRank 알고리즘을 활용하여 문자 배열에서 키워드와 주요 문장을 추출합니다.
-코드 속에 있는 TextRank 관련 함수는 lovit/textrank 패키지의 소스코드 내용을 사용하였습니다.
-제가 직접 작성하지 않은 코드의 경우 주석으로 Source Code 표시를 해두었습니다.
-TextRank 소스 코드와 내용에 대해 자세히 알고 싶으시다면 아래 두 페이지를 방문해주시길 바랍니다.
+TextRank 알고리즘을 활용하여 문자 배열에서 키워드와 주요 문장을 추출합니다.  
+코드 속에 있는 TextRank 관련 함수는 lovit/textrank 패키지의 소스코드 내용을 사용하였습니다.  
+제가 직접 작성하지 않은 코드의 경우 주석으로 Source Code 표시를 해두었습니다.  
+TextRank 소스 코드와 내용에 대해 자세히 알고 싶으시다면 아래 두 페이지를 방문해주시길 바랍니다.  
 
-<li>TextRank 설명글 블로그 링크입니다.<li>
+<li>TextRank 설명글 블로그 링크입니다.  
 https://lovit.github.io/nlp/2019/04/30/textrank/
 
-<li>패키지 GitHub 링크입니다.<li>
+<li>패키지 GitHub 링크입니다.  
 https://github.com/lovit/textrank/
 
 
