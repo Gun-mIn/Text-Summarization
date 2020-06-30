@@ -29,3 +29,6 @@ win32com.client를 import하고, tts = win32com.client.Dispatch("SAPI.SpVoice") 
 이후 tts.Speak("문자열")함수를 이용해 문자열(str)을 음성으로 출력합니다.
 이를 위해 앞서 사용한 textrank 결과물을 str으로 변환하고, "/n"을 제거하고, "."에서 줄바꿈을 해주는 등의 전처리 과정을 거쳤습니다.
 자세한 코드는 업로드된 코드를 참고하시길 바랍니다.
+
+<li> SAPI의 SpVoice에 대한 MS Docs 링크입니다.
+<li>https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms723602(v=vs.85)
