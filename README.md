@@ -20,6 +20,7 @@ https://github.com/lovit/textrank/
 ## Crawling
 크롬 드라이버를 활용하여 네이버 뉴스 기사의 url의 기사 제목과 본문 내용을 크롤링했습니다.  
 html tag name을 이용하여 제목과 본문만을 가져와 result1.txt라는 이름으로 저장합니다.  
+이때, 크롤링한 본문의 문자열에서 모든 "/n"를 제거하고, "."와 "]"에서 "/n"을 넣은 상태로 .txt 파일에 저장합니다.  
 
 <li>selenium 패키지 설치 및 크롬 드라이버 이용 방법은 아래의 블로그를 참고하였습니다.<li>
 https://m.blog.naver.com/jsk6824/221763151860
@@ -29,7 +30,7 @@ https://m.blog.naver.com/jsk6824/221763151860
 MS의 SAPI에 내장된 SpVoice를 사용하였습니다.  
 win32com.client를 import하고, tts = win32com.client.Dispatch("SAPI.SpVoice") 객체를 선언해줍니다.  
 이후 tts.Speak("문자열")함수를 이용해 문자열(str)을 음성으로 출력합니다.  
-이를 위해 앞서 사용한 textrank 결과물을 str으로 변환하고, "/n"을 제거하고, "."에서 줄바꿈을 해주는 등의 전처리 과정을 거쳤습니다.  
+앞에서 얻은 textrank 결과물을 리스트 내의 튜플 형태에서 str으로 변환하고, "/NNG"과 같은 품사 형태를 제거하는 전처리 과정을 거쳤습니다.  
 자세한 코드는 업로드된 코드를 참고하시길 바랍니다.  
 
 <li> SAPI의 SpVoice에 대한 MS Docs 링크입니다.
